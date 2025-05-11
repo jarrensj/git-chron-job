@@ -63,7 +63,7 @@ def get_commit_log(repo_path: str) -> Optional[List[datetime]]:
         print(f"\nCommit dates and times (PST) for repository at '{repo_path}':")
         print("-" * 60)
         for pst_time in parsed_dates:
-            print(pst_time.strftime('%A, %Y-%m-%d %H:%M:%S %Z'))
+            print(pst_time.strftime('%A, %Y-%m-%d %I:%M:%S %p %Z'))
         print("-" * 60)
         print(f"Total commits: {len(parsed_dates)}")
         
